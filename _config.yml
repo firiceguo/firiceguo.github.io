@@ -3,7 +3,7 @@ title: "Firice's blog"
 email: firice1379@yahoo.com
 description: "Firice's blog"
 baseurl: ""
-url: "https://firiceguo.hithub.io"
+url: "https://firiceguo.github.io"
 title_description: "My personal blog."
 title_image: "https://{{ site.baseurl | prepend:site.url}}/images/title.png"
 google_analytics: "UA-73945224-1"
