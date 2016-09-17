@@ -10,20 +10,6 @@ You can see this site [here](https://github.com/firiceguo/firiceguo.github.io).
 
 Email address: firiceguo@gmail.com
 
-### Article
-![Article](http://i.imgur.com/8rD8FfC.png)
-
-### Disqus Comments
-![Comments](http://i.imgur.com/TBZHQwF.png)
-
-### Posts grouped by year
-![All Posts](http://i.imgur.com/9bNs2Sc.png)
-
-### JavaScript Search
-![Search](http://i.imgur.com/yQqMeSl.png)
-
-### Menu by mmenu
-![Menu](http://i.imgur.com/SClrNSH.png)
 
 ## Theme
 This blog was made on [GitHub Pages](https://pages.github.com/) using [Jekyll](http://jekyllrb.com/) with modified [jekyll clean theme](http://jekyllthemes.org/themes/jekyll-clean/) and Disqus as a comments system. 
