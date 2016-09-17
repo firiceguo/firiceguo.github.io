@@ -5,7 +5,7 @@ description: "Firice's blog"
 baseurl: ""
 url: "http://firiceguo.hithub.io"
 title_description: "My personal blog."
-title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
+title_image: "{{ site.baseurl | prepend:site.url}}/images/title.png"
 google_analytics: "UA-73945224-1"
 disqus_account: cartenoire
 github_repository: https://github.com/firiceguo/firiceguo.github.io
