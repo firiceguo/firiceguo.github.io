@@ -1,6 +1,6 @@
 # Site settings
 title: "Firice's blog"
-email: firice1379@yahoo.com
+email: firiceguo@gmail.com
 description: "Firice's blog"
 baseurl: ""
 url: "https://firiceguo.github.io"
@@ -11,7 +11,7 @@ title_image: "https://firiceguo.github.io/images/title.png"
 google_analytics: "UA-73945224-1"
 disqus_account: firiceguo
 github_repository: https://github.com/firiceguo/firiceguo.github.io
-# addthis_id: ra-513c6fa83da6ec67
+addthis_id: ra-57dcea0e3c2d5f49
 post_limit: 10
 
 # Social usernames/URLs
