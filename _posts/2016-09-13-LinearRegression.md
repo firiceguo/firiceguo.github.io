@@ -3,6 +3,7 @@ layout: post
 title: "Linear Regression and Logistic Regression"
 date: 2016-09-13 18:17
 tags: MachineLearning
+categories: MachineLearning
 description: Questions about linear regression and logistic regression 
 ---
 

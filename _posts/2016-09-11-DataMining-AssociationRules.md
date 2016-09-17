@@ -3,6 +3,7 @@ layout: post
 title: "Association Rules Mining"
 date: 2016-09-11 19:55
 tags: DataMining
+categories: DataMining
 description: Algorithms for generating association rules 
 ---
 
