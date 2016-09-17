@@ -21,7 +21,7 @@ description: Questions about Perceptron
 
 对于分布`D`中独立同分布的数据`{ (xi, yi) : 1 <= i <= n}`,
 
-![chart]({{ site.baseurl | prepend:site.url}}/images/Perceptron.png){: .center-image }
+$$ y = sign(f_w(x)) = sign(w^T x) $$
 
 其中`y = sign(z)`是符号函数，当`z > 0`时`y = +1`,当`z < 0`时`y = -1`
 
@@ -45,11 +45,11 @@ description: Questions about Perceptron
 
 假定w和x都是单位向量，即长度都为1，则有一个距离决策边界的最近距离：
 
-![chart]({{ site.baseurl | prepend:site.url}}/images/PerceptronMin.png){: .center-image }
+$$ \gamma = min_i |(w^*)^T x_i| $$
 
 犯错误次数`M`：
 
-![chart]({{ site.baseurl | prepend:site.url}}/images/PerceptronM.png){: .center-image }
+$$ M \le (\frac 1 \gamma)^2 $$
 
 证明如下（摘自《统计学习方法》P31）：
 
