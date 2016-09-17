@@ -14,7 +14,7 @@ toc: true
 
 在进入系统之后，可以看到，`EOS` 使用了一干小众软件作为其默认软件，不能说不好，但是用户习惯还在，所以需要根据自己的习惯安装软件和主题。闲言少叙，先上图晒桌面：
 
-![screenshot](https://{{ site.baseurl | prepend:site.url}}/images/screenshot-EOS-1.png){: .center-image }*EOS Screenshot*
+![screenshot]({{ site.baseurl | prepend:site.url}}/images/screenshot-EOS-1.png){: .center-image }*EOS Screenshot*
 
 
 ## 1. 主题

@@ -17,7 +17,7 @@ toc: true
 总而言之，就是没有点艺术细胞弄出来的会很丑且看起来不和谐。Bingo！我没有艺术细胞，所以就只能使用拿来主义了。
 
 我使用的主题叫做 [Harmattan](http://zagortenay333.deviantart.com/art/Conky-Harmattan-426662366) ,在此盗用作者的一张图：
-![conky](https://{{ site.baseurl | prepend:site.url}}/images/conky-harmattan.png){: .center-image }*Conky-harmattan by zagortenay333*
+![conky]({{ site.baseurl | prepend:site.url}}/images/conky-harmattan.png){: .center-image }*Conky-harmattan by zagortenay333*
 
 看起来总体效果还是不错的，下面就开始折腾了。
 
@@ -37,12 +37,12 @@ toc: true
 
 这个是最初版本的配置文件的效果：
 
-![conky-0](https://{{ site.baseurl | prepend:site.url}}/images/conky-before-edit.png){: .center-image }*修改配置文件之前的状态*
+![conky-0]({{ site.baseurl | prepend:site.url}}/images/conky-before-edit.png){: .center-image }*修改配置文件之前的状态*
 
 
 可以看出来，是有很多问题的，比如周围错位，内部错位，没有天气信息什么的，我改了下配置文件，效果好多了：
 
-![conky-final](https://{{ site.baseurl | prepend:site.url}}/images/conky-after-edit.png){: .center-image }*修改配置文件之后的状态*
+![conky-final]({{ site.baseurl | prepend:site.url}}/images/conky-after-edit.png){: .center-image }*修改配置文件之后的状态*
 
 作者用的是 [OpenWeatherMap](http://openweathermap.org/) 的天气源，我们需要去上面注册一个用户，之后会给你一个 `API key` ，把那个 key 粘贴到 `template6 ""` ，城市代码在[这里](http://openweathermap.org/help/city_list.txt)找到之后粘贴到 `template7 ""` 就行了。
 配置文件如下：
