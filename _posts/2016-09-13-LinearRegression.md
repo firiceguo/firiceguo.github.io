@@ -16,7 +16,7 @@ description: Questions about linear regression and logistic regression
 
 ### **什么是线性模型？**
 
-![chart]({{ site.baseurl | prepend:site.url}}/images/LinearModel.png){: .center-image }
+$$ f(x) = w^T x + b $$
 
 其中`w`是各个属性的权值，`x`则是各个属性的取值。
 
@@ -31,7 +31,7 @@ description: Questions about linear regression and logistic regression
 
 建立线性模型的过程也就是对`w`和`b`两个参数进行估计的过程。目的是使误差函数最小。结果如下：
 
-![chart]({{ site.baseurl | prepend:site.url}}/images/LinearModelSol.png){: .center-image }
+$$ w = (X^T X)^{-1}X^T y $$
 
 > 当 X^{T}X 满秩的时候，可以有唯一解。当其不是满秩的时候（如变量数目大于样例数目时），w就不是唯一解，通常引入正则化（regularization）项来解决这个问题
 {: .note}
@@ -43,9 +43,9 @@ description: Questions about linear regression and logistic regression
 
 当我们进行二分类任务时，需要将输出标记为0或者1。理想的分类函数是单位阶跃函数，但是其在0处不可导，会为计算增加很多困难。因此引入一种Sigmoid函数——对数几率函数来替代单位阶跃函数来进行分类：
 
-![chart]({{ site.baseurl | prepend:site.url}}/images/sigmoid.png){: .center-image }
+$$ \sigma (z) = \frac 1 {1-e^{-z}} $$
 
-![chart]({{ site.baseurl | prepend:site.url}}/images/sigmoid_bipolar.png){: .center-image }
+![img]({{ site.baseurl | prepend:site.url}}/images/sigmoid_bipolar.png){: .center-image }
 
 ### **如何确定此时的w？**
 
