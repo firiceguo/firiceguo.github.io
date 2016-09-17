@@ -4,6 +4,7 @@ title: "Parallel Programming Introduction"
 date: 2016-09-03 19:55
 tags: ParallelProgramming
 categories: ParallelProgramming
+thumbnail:  book
 description: Some basic info about parallel programming
 ---
 

@@ -4,6 +4,7 @@ title: "Perceptron"
 date: 2016-09-14 12:39
 tags: MachineLearning
 categories: MachineLearning
+thumbnail:  book
 description: Questions about Perceptron
 ---
 
@@ -37,7 +38,7 @@ description: Questions about Perceptron
 
 4. `t = t + 1`，并且重复第三步
 
-> 这里的`w`对应分类线的法向量
+> 这里的 w 对应分类线的法向量
 {: .note}
 
 ### 如何确定算法收敛？

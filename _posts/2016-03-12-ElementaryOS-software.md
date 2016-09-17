@@ -4,6 +4,7 @@ title: "Elementary OS 探索 —— 基本软件"
 date: 2016-03-11
 tags: ElementaryOS
 categories: ElementaryOS
+thumbnail:  linux
 description: Elementary OS 的基本软件
 toc: true
 ---

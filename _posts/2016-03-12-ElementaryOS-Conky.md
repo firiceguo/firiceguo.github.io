@@ -4,6 +4,7 @@ title: "Elementary OS 探索 —— Conky"
 date: 2016-03-11
 tags: ElementaryOS
 categories: ElementaryOS
+thumbnail:  linux
 description: My Conky in Elementary OS
 toc: true
 ---

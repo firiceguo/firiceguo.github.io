@@ -4,6 +4,7 @@ title: "机器学习 —— 评估方法"
 date: 2016-08-24 15:33
 tags: MachineLearning
 categories: MachineLearning
+thumbnail:  books
 description: 一些设置训练集和数据集的方法
 ---
 

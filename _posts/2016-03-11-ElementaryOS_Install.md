@@ -4,6 +4,7 @@ title: "Elementary OS 探索"
 date: 2016-03-11
 tags: ElementaryOS
 categories: ElementaryOS
+thumbnail:  linux
 description: 安装 Elementary OS 的全过程
 toc: true
 ---
