@@ -21,6 +21,9 @@ linkedin_link:
 google_plus_link: 
 stackoverflow_link: 
 
+
+gems: ["jemoji"]
+
 # Footer
 footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://github.com/jekyll/jekyll\">jekyll</a>"
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/firiceguo/firiceguo.github.io\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
@@ -34,6 +37,3 @@ kramdown:
 
 permalink: pretty
 exclude: [vendor]
-
-gems:
-  - jemoji
