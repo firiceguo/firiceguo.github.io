@@ -46,7 +46,13 @@ $$ \sigma (z) = \frac 1 {1-e^{-z}} $$
 
 ![img]({{ site.baseurl | prepend:site.url}}/images/sigmoid_bipolar.png){: .center-image }
 
+那么引入Sigmoid函数之后的：
+
+$$ P(Y=1|X)=\frac 1 {1+e^{-WX}} $$
+
+这里的w是weight,x是feature
+
 ### **如何确定此时的w？**
 
-使用*最大似然法*
+使用*最大似然法*或者*梯度下降法*或者其他的算法。
 
