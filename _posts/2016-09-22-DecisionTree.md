@@ -30,7 +30,7 @@ description: Decision Tree Induction algorithm
 
 ## 三种方法 —— 用于选取分类的属性
 
-1. 信息熵 Entropy（ID3算法）：
+- 信息熵 Entropy（ID3算法）：
 
 $$ Info(P)=-\sum_{i=1}^n p_i \log(p_i) $$
 
@@ -42,7 +42,7 @@ $$ Gain(A) = 1-Info(D) $$
 
 > ID3算法存在一个问题，就是偏向于多值属性，例如，如果存在唯一标识属性ID，则ID3会选择它作为分裂属性，这样虽然使得划分充分纯净，但这种划分对分类几乎毫无用处。
 
-2. 增益率 Gain Ratio （C4.5算法）
+- 增益率 Gain Ratio （C4.5算法）
 
 C4.5算法使用增益率来克服ID3算法偏向多值属性的缺点（正则化信息增益）
 
@@ -52,7 +52,7 @@ $$ GainRatio(A) = \frac{Gain(A)}{SplitInfo(A)} $$
 
 增益率最大的那一项将会被选为分裂属性。
 
-3. 基尼系数 Gini Index
+- 基尼系数 Gini Index
 
 基尼系数定义为：
 
