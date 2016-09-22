@@ -1,9 +1,13 @@
 ---
 layout: post
 title: "Decision Tree Induction"
-date: 2016-09-22 20:55
-tags: DataMining
-categories: DataMining
+date: 2016-09-22 21:33
+tags: 
+    - DataMining
+    - MachineLearning
+categories: 
+    - DataMining
+    - MachineLearning
 thumbnail:  book
 description: Decision Tree Induction algorithm
 ---
