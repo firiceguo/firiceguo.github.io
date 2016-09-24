@@ -14,7 +14,7 @@ description: Some basic info about parallel programming
 
 并行：多个核心分别同时处理一个或者多个任务。
 
-并发：不同的任务看起来“同时”进行，实际上并不一定是同时的，可能是并行的，也就是不同的核心同时来进行这些不同的任务，也可能不是，只是单纯地相互穿插着进行，让人看起来这些任务是“同时”的。所以，并发包括并行，但是并发并不一定并行。
+并发：不同的任务看起来“同时”进行，实际上并不一定是同时的，可能是并行的，也就是不同的核心同时来进行这些不同的任务，也可能不是，只是单纯地相互穿插着进行，让人看起来这些任务是“同时”的。所以，个人理解，并发包括并行，但是并发并不一定并行。
 
 个人观点，在多核多任务的状态下，如果单个时间点上面只有一个任务在进行，其他任务被挂起，则是并发不是并行；如果单个时间点上所有的任务都在进行，那么就是并行。在单核状态下，多任务是并发，而不存在并行。
 
@@ -29,7 +29,6 @@ description: Some basic info about parallel programming
 - Parallel computing – a program is one in which multiple tasks cooperate closely to solve a problem.
 
 - Distributed computing – a program may need to cooperate with other programs to solve a problem.
-
 
 ## Type of parallel systems
 
