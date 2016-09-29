@@ -72,4 +72,12 @@ description: A script written by python to download lecture videos from rvc.ust.
 
 但是服务器过来的数据是按照数字顺序（1，2，3，...）排序的，所以还是要重新处理一下。
 
+## 4. 运行情况
+
+跑起来是这样的：
+
+![screenshot]({{ site.baseurl | prepend:site.url}}/images/downloader-running.png){: .center-image }
+
+网络占用并不平均，一定是我的网太快了，哈哈。
+
 源码在[这里](https://github.com/firiceguo/Auto-download-rvc.ust.hk)
