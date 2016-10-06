@@ -66,7 +66,7 @@ description: A script written by python to download lecture videos from rvc.ust.
 
 - windows 下的命令：`copy /b video1 + video2 video`
 
-- Linux 下的命令：`cat video1 video2 > video`
+- Linux 下的命令：`cat video1 >> video`
 
 可以直接用python里的`os.system(cmd)`就可以调用了。
 
