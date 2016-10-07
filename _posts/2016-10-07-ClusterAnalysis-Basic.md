@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Cluster Analysis - Basic"
+title: "Cluster Analysis: Basic Concepts and Methods"
 date: 2016-10-07 11:55
 tags: DataMining
 categories: DataMining
 thumbnail:  book
-description: Cluster Analysis: Basic Concepts and Methods 
+description: Cluster Analysis - Basic Concepts and Methods 
 ---
 
 ## 聚类算法（Cluster Analysis）
