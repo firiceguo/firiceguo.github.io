@@ -4,7 +4,7 @@ title: "CUDA fix bugs"
 date: 2016-10-07 19:55
 tags: ParallelProgrammin
 categories: ParallelProgramming
-thumbnail:  fa-calculator
+thumbnail:  cogs
 description: Some issuses during using CUDA
 ---
 
@@ -14,7 +14,7 @@ description: Some issuses during using CUDA
 
 按照[CUDA官网](https://developer.nvidia.com/cuda-downloads)和[CUDA Quick Start Guide](https://developer.nvidia.com/compute/cuda/8.0/prod/docs/sidebar/CUDA_Quick_Start_Guide-pdf)下载安装。
 
-在
+在:
 {% highlight bash %}
 cd ~/NVIDIA_CUDA-8.0_Samples/5_Simulations/nbody
 make
