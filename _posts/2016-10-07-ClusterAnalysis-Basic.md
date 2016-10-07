@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cluster Analysis: Basic Concepts and Methods"
+title: "Cluster Analysis - Basic"
 date: 2016-10-07 11:55
 tags: DataMining
 categories: DataMining
