@@ -4,7 +4,7 @@ title: "CUDA fix bugs"
 date: 2016-10-07 19:55
 tags: ParallelProgrammin
 categories: ParallelProgramming
-thumbnail:  calculator
+thumbnail:  fa-calculator
 description: Some issuses during using CUDA
 ---
 
