@@ -8,7 +8,7 @@ thumbnail:  cogs
 description: Some issuses during using CUDA
 ---
 
-> 这篇文章记录用于记录我在使用和配置`CUDA`的踩的坑和解决办法们。
+> 这篇文章记录用于记录我在`Linux`使用和配置`CUDA`的踩的坑和解决办法们。
 
 ## 安装
 
