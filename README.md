@@ -6,7 +6,7 @@ I would try my best to keep both me and my blog progressing.
 
 If you have some questions or suggestions, please feel free to contact me via email.
 
-You can see this site [here](https://github.com/firiceguo/firiceguo.github.io).
+You can see this site [here](http://firiceguo.github.io).
 
 Email address: firiceguo@gmail.com
 
