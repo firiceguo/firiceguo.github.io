@@ -31,9 +31,9 @@ make
 GLPATH=/usr/lib make
 {% endhighlight bash %}
 
-但是我想不能每次都加这么一句，我也记不住，所以又加了
+但是我想不能每次都加这么一句，我也记不住，所以需要在`~/.bashrc`最后加一句：
 {% highlight bash %}
 export GLPATH=/usr/lib
 {% endhighlight bash %}
-这么一句，之后就不会报错了
+之后就不会报错了
 
