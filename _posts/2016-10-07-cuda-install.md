@@ -37,3 +37,18 @@ export GLPATH=/usr/lib
 {% endhighlight bash %}
 之后就不会报错了
 
+========
+Update 2016-11-08:
+
+For error:
+
+{% highlight bash %}
+No command 'nvcc' found
+{% endhighlight bash %}
+
+In current shell && in `~/.bashrc`:
+
+{% highlight bash %}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib
+export PATH=$PATH:/usr/local/cuda/bin
+{% endhighlight bash %}
