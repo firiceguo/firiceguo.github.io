@@ -8,7 +8,15 @@ thumbnail:  cogs
 description: Some issuses during using CUDA
 ---
 
-> 这篇文章记录用于记录我在`Linux`使用和配置`CUDA`的踩的坑和解决办法们。
+> 这篇文章用于记录我在`Linux`使用和配置`CUDA`的踩的坑和解决办法们。
+
+## References
+
+[SIMD < SIMT < SMT: parallelism in NVIDIA GPUs](http://yosefk.com/blog/simd-simt-smt-parallelism-in-nvidia-gpus.html)
+
+[Professional CUDA C programming](www.hds.bme.hu/~fhegedus/C++/Professional%20CUDA%20C%20Programming.pdf)
+
+[CUDA C Programming Guide](http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)
 
 ## 安装
 
@@ -37,7 +45,8 @@ export GLPATH=/usr/lib
 {% endhighlight bash %}
 之后就不会报错了
 
-========
+------------
+
 Update 2016-11-08:
 
 For error:
