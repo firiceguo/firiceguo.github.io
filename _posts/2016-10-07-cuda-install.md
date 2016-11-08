@@ -14,7 +14,7 @@ description: Some issuses during using CUDA
 
 [SIMD < SIMT < SMT: parallelism in NVIDIA GPUs](http://yosefk.com/blog/simd-simt-smt-parallelism-in-nvidia-gpus.html)
 
-[Professional CUDA C programming](www.hds.bme.hu/~fhegedus/C++/Professional%20CUDA%20C%20Programming.pdf)
+[Professional CUDA C programming](http://www.hds.bme.hu/~fhegedus/C++/Professional%20CUDA%20C%20Programming.pdf)
 
 [CUDA C Programming Guide](http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)
 
