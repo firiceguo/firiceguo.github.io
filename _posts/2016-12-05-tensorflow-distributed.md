@@ -61,6 +61,12 @@ elif FLAGS.job_name == "worker":
 		.....
 {% endhighlight python %}
 
+这里的 chief 还有一点讲究，官方对于 chief 的解释是这样的：
+
+> Training with replicas you deploy the same program in a Cluster. One of the tasks must be identified as the chief: the task that handles initialization, checkpoints, summaries, and recovery. The other tasks depend on the chief for these services.
+
+所以，被当作 chief 的机器的负载还会重一些。
+
 这样，最简单的分布式就配好了。其实还有一种方法，也可以让不同的 worker 做不同的事情，在[这里](http://learningtensorflow.com/lesson11/)有教程，我还没有试。
 
 关于运行，可以用下面的脚本分别在两台服务器上面运行：
