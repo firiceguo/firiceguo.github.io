@@ -59,7 +59,7 @@ elif FLAGS.job_name == "worker":
                              init_op=init_op)
     with sv.prepare_or_wait_for_session(server.target) as sess:
 		.....
-{% endhightlight python %}
+{% endhighlight python %}
 
 这样，最简单的分布式就配好了。其实还有一种方法，也可以让不同的 worker 做不同的事情，在[这里](http://learningtensorflow.com/lesson11/)有教程，我还没有试。
 
@@ -69,6 +69,6 @@ TensorFlow 官方提供了一些 [models](https://github.com/tensorflow/models) 
 
 修改过的模型在[这里](https://github.com/firiceguo/my-tensorflow-distributed)。
 
-我分别测试了数据量大小不同，模型复杂度大小不同，服务器分工不同时服务器的CPU和网络的情况。
+分别测试了数据量大小不同，模型复杂度大小不同，服务器分工不同时服务器的CPU和网络的情况。
 
 由于图太多就先不放图了，初步结论是，当改变数据量大小的时候，CPU利用率并不会增加，对于某些算法，会延长其运行时间，并改变网络利用情况，因此，算法的不同是主要考虑因素。当模型大小改变的时候，总体来看，会对CPU和网络产生更大的压力。在对集群进行分工的时候，网络传输会成为性能的瓶颈，因此，尽可能减少集群中各个节点的之间的网络传输，即在CPU仍有富裕的情况下，尽可能把PS和Worker分配到一起，可以提高集群的计算效率和CPU使用效率。
