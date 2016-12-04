@@ -10,7 +10,7 @@ categories:
     - MachineLearning
     - Distributed
     - Python
-thumbnail:  cubes
+thumbnail: clone
 description: Distributed TensorFlow test and simple evaluate
 ---
 
