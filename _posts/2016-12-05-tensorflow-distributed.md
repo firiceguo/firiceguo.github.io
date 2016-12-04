@@ -63,6 +63,35 @@ elif FLAGS.job_name == "worker":
 
 这样，最简单的分布式就配好了。其实还有一种方法，也可以让不同的 worker 做不同的事情，在[这里](http://learningtensorflow.com/lesson11/)有教程，我还没有试。
 
+关于运行，可以用下面的脚本分别在两台服务器上面运行：
+
+在 PS & Worker上：
+
+{% highlight bash %}
+#!/bin/sh
+
+dir=./log/1
+
+date > $dir/output-0
+python $1 --job_name="ps" --task_index=0 >> $dir/output-0 &
+python $1 --job_name="worker" --task_index=0 >> $dir/output-0
+date >> $dir/output-0
+
+{% endhighlight bash %}
+
+在worker上：
+
+{% highlight bash %}
+#!/bin/sh
+
+dir=./log/1
+
+date > $dir/output-1
+python $1 --job_name="worker" --task_index=1 >> $dir/output-1
+date >> $dir/output-1
+
+{% endhighlight bash %}
+
 ## 3. 简要测试
 
 TensorFlow 官方提供了一些 [models](https://github.com/tensorflow/models) 来供学习和测试。我改了 `AutoEncoder` 和 `Transformer` 这两个模型来做测试。
