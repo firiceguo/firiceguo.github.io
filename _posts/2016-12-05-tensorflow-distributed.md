@@ -10,7 +10,7 @@ categories:
     - MachineLearning
     - Distributed
     - Python
-thumbnail: clone
+thumbnail: tasks
 description: Distributed TensorFlow test and simple evaluate
 ---
 
