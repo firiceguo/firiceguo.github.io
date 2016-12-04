@@ -2,7 +2,7 @@
 layout: post
 title: "CUDA fix bugs"
 date: 2016-10-07 19:55
-tags: ParallelProgrammin
+tags: ParallelProgramming
 categories: ParallelProgramming
 thumbnail:  cogs
 description: Some issuses during using CUDA
