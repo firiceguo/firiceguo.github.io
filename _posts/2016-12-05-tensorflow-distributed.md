@@ -5,11 +5,13 @@ date: 2016-12-04 21:23
 tags:
     - MachineLearning
     - Distributed
-    - Python
+    - python
+    - web
 categories:
     - MachineLearning
     - Distributed
-    - Python
+    - python
+    - web
 thumbnail: tasks
 description: Distributed TensorFlow test and simple evaluate
 ---
