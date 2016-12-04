@@ -23,6 +23,7 @@ description: Distributed TensorFlow test and simple evaluate
 ## 2. 实现方法
 
 - 首先在原有代码中设置 `PS` 和 `worker`，然后设置cluster，然后设置flag的配置方法，最后开启一个server：
+
 {% highlight python %}
 parameter_servers = ["192.168.122.100:2223"]
 workers = ["192.168.122.100:2222",
@@ -40,6 +41,7 @@ server = tf.train.Server(
 {% endhighlight python %}
 
 - 然后加这么一段，意思就是当这个服务是`PS`的时候，加入server中并等待，如果是`worker`，那么开始执行下面的语句：
+
 {% highlight python %}
 if FLAGS.job_name == "ps":
     server.join()
@@ -51,6 +53,7 @@ elif FLAGS.job_name == "worker":
 {% endhighlight python %}
 
 - 之后就是配置流图，配置结构，完了之后用`initialize_all_variables`初始化所有变量，之后配置一个 Supervisor 并在所有的 worker 加入之后启动 session：
+
 {% highlight python %}
     sv = tf.train.Supervisor(is_chief=(FLAGS.task_index == 0),
                              init_op=init_op)
