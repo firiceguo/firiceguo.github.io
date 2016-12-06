@@ -22,6 +22,8 @@ description: Distributed TensorFlow test and simple evaluate
 
 [分布式Tensorflow](https://www.tensorflow.org/versions/r0.12/how_tos/distributed/index.html#distributed-tensorflow) 可以将 TensorFlow 运行在 CPU 集群和 GPU 集群上，可以通过 [kubernetes](http://kubernetes.io/) 管理 [docker](https://www.docker.com/) 集群来实现大规模管理。它的文档其实不算很清晰，至少对于我这种新手来说不是很清晰，我还是通过[这篇](https://ischlag.github.io/2016/06/12/async-distributed-tensorflow/)文章来理解的，因此我实验的时候用的方法也是通过参数服务器（Parameter server，简称PS）共享参数，手动跑脚本实现的。
 
+个人理解，通过共享参数的意思就是，所有的worker做完自己的一次迭代之后把更新的参数上传到参数服务器，让别的worker能够使用。这样，如果单机版需要跑1000次迭代，有5台做worker的服务器，那么每台迭代200次就可以达到之前一台机器迭代1000次的效果。
+
 ## 2. 实现方法
 
 - 首先在原有代码中设置 `PS` 和 `worker`，然后设置cluster，然后设置flag的配置方法，最后开启一个server：
