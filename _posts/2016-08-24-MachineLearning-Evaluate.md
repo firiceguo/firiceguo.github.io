@@ -64,12 +64,16 @@ $$ \lim_{m\to\infty}(1-\frac1m)^m \to \frac1e\approx 0.368 $$
 -------
 Update 2016/12/22
 -------
+
 ## 验证集 & 测试集 (Validation set & Test set)
 
-> Training set: A set of examples used for learning, which is to fit the parameters [i.e., weights] of the classifier.
-Validation set: A set of examples used to tune the parameters [i.e., architecture, not weights] of a classifier, for example to choose the number of hidden units in a neural network. 
-Test set: A set of examples used only to assess the performance [generalization] of a fully specified classifier.
--- Pattern Recognition and Neural Networks, Ripley, B.D (1996)
+Pattern Recognition and Neural Networks, Ripley, B.D (1996):
+
+- Training set: A set of examples used for learning, which is to fit the parameters [i.e., weights] of the classifier.
+
+- Validation set: A set of examples used to tune the parameters [i.e., architecture, not weights] of a classifier, for example to choose the number of hidden units in a neural network. 
+
+- Test set: A set of examples used only to assess the performance [generalization] of a fully specified classifier. 
 
 The **validation phase** is often split into two parts:
 
@@ -77,4 +81,4 @@ The **validation phase** is often split into two parts:
 
 2. Then you estimate the accuracy of the selected approach (=test).
 
--- from [http://stats.stackexchange.com/questions/19048/what-is-the-difference-between-test-set-and-validation-set](http://stats.stackexchange.com/questions/19048/what-is-the-difference-between-test-set-and-validation-set)
+-- From [here](http://stats.stackexchange.com/questions/19048/what-is-the-difference-between-test-set-and-validation-set)
