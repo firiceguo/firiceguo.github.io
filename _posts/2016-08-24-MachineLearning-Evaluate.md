@@ -5,7 +5,7 @@ date: 2016-08-24 15:33
 tags: MachineLearning
 categories: MachineLearning
 thumbnail:  books
-description: 一些设置训练集和数据集的方法
+description: 一些设置训练集和测试集的方法
 ---
 
 ## 评估方法
@@ -14,12 +14,12 @@ description: 一些设置训练集和数据集的方法
 
 训练集: T
 
-数据集: S
+测试集: S
 
 
 ## *留出法*
 
-直接将数据集分成训练集和数据集
+直接将数据集分成训练集和测试集
 
 常见的方法是对大约**2/3~4/5**的样本进行训练
 
@@ -59,3 +59,22 @@ $$ \lim_{m\to\infty}(1-\frac1m)^m \to \frac1e\approx 0.368 $$
 > 优点：在数据集较小、难以有效划分训练/测试集时很有用，对于集成学习等方法有很大的好处
 
 > 缺点：改变了初始数据集的分布，会引入估计偏差
+
+
+-------
+Update 2016/12/22
+-------
+## 验证集 & 测试集 (Validation set & Test set)
+
+> Training set: A set of examples used for learning, which is to fit the parameters [i.e., weights] of the classifier.
+Validation set: A set of examples used to tune the parameters [i.e., architecture, not weights] of a classifier, for example to choose the number of hidden units in a neural network. 
+Test set: A set of examples used only to assess the performance [generalization] of a fully specified classifier.
+-- Pattern Recognition and Neural Networks, Ripley, B.D (1996)
+
+The **validation phase** is often split into two parts:
+
+1. In the first part you just look at your models and select the best performing approach using the validation data (=validation)
+
+2. Then you estimate the accuracy of the selected approach (=test).
+
+-- from [http://stats.stackexchange.com/questions/19048/what-is-the-difference-between-test-set-and-validation-set](http://stats.stackexchange.com/questions/19048/what-is-the-difference-between-test-set-and-validation-set)
