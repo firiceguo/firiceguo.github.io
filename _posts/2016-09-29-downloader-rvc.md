@@ -9,6 +9,7 @@ categories:
     - web
     - python
 thumbnail: bug
+comments: true
 description: A script written by python to download lecture videos from rvc.ust.hk.
 ---
 

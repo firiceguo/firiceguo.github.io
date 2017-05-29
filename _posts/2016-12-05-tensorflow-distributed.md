@@ -13,6 +13,7 @@ categories:
     - python
     - web
 thumbnail: tasks
+comments: true
 description: Distributed TensorFlow test and simple evaluate
 ---
 

@@ -5,6 +5,7 @@ date: 2016-09-14 12:39
 tags: MachineLearning
 categories: MachineLearning
 thumbnail:  book
+comments: true
 description: Questions about Perceptron
 ---
 

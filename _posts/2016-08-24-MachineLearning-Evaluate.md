@@ -5,6 +5,7 @@ date: 2016-08-24 15:33
 tags: MachineLearning
 categories: MachineLearning
 thumbnail:  books
+comments: true
 description: 一些设置训练集和测试集的方法
 ---
 

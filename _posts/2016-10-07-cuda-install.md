@@ -5,6 +5,7 @@ date: 2016-10-07 19:55
 tags: ParallelProgramming
 categories: ParallelProgramming
 thumbnail:  cogs
+comments: true
 description: Some issuses during using CUDA
 ---
 

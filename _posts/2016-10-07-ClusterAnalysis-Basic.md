@@ -5,6 +5,7 @@ date: 2016-10-07 11:55
 tags: DataMining
 categories: DataMining
 thumbnail:  book
+comments: true
 description: Cluster Analysis - Basic Concepts and Methods 
 ---
 

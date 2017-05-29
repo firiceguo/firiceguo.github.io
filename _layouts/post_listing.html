@@ -19,12 +19,15 @@ layout: default
       {% endfor %}
       {% endif %}
     </p>
-    <h4>
+    <h2>
       <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
       {% if post.link %}
-      <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-external-link"></i></a>
+      <!--<a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-external-link"></i></a>-->
+      <li>
+        <a href="{{ post.link }}">{{ post.title }}</a>
+      </li>
       {% endif %}
-    </h4>
+    </h2>
 
     {% if post.author %}
       {% assign author = site.data.authors[post.author] %}
