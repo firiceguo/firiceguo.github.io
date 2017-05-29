@@ -5,6 +5,7 @@ date: 2016-03-11
 tags: ElementaryOS
 categories: ElementaryOS
 thumbnail:  linux
+comments: true
 description: My Conky in Elementary OS
 toc: true
 ---
