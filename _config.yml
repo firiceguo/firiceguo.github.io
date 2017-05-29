@@ -1,39 +1,72 @@
-# Site settings
-title: "Firice's blog"
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Firice
 email: firiceguo@gmail.com
-description: "Firice's blog"
-baseurl: ""
-url: "https://firiceguo.github.io"
-title_description: "This is a personal blog to record my thinking.
-I would try my best to keep both me and my blog progressing.
-If you have some questions or suggestions, please feel free to contact me via email (firiceguo@gmail.com)."
-title_image: "https://firiceguo.github.io/images/title.png"
-google_analytics: "UA-73945224-1"
-disqus_account: firiceguo
-github_repository: https://github.com/firiceguo/firiceguo.github.io
-addthis_id: ra-57dcea0e3c2d5f49
-post_limit: 10
+description: "My Place && Palace."
+url: https://firiceguo.github.io
 
-# Social usernames/URLs
-twitter_username: 
-github_username:  firiceguo
-linkedin_link: 
-google_plus_link: 
-stackoverflow_link: 
 
-# Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://github.com/jekyll/jekyll\">jekyll</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/firiceguo/firiceguo.github.io\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
-
-# Build settings
-markdown: kramdown
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Asia/Shanghai
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
 
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
-permalink: pretty
-exclude: [vendor]
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: Firice
+  avatar: logo.png
+  job: "To create is to live."
+  bio: "Follow your dream && Fake your death."
+  email: firiceguo@gmail.com
+  disqus-shortname: firiceguo
+  twitter: #username
+  facebook: #username
+  google:
+    plus: #username
+    analytics: "UA-73945224-1"
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: firiceguo
+  gitlab: #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  skype: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: u/3982925747
+  flickr: #username
+  500px: #username
+  codepen: #username
 
 gems:
   - jemoji

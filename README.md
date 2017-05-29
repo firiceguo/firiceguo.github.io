@@ -1,41 +1,45 @@
-## About me
+### Update 03/08/2016
+I'm working on making leonids a [jekyll theme](https://jekyllrb.com/docs/themes/) so that people can easily install the theme without having to fork or download anything from here. Actually the first gem version is published, you can install it by following the official [doc](https://jekyllrb.com/docs/themes/). You can find the rubygem version [here](https://rubygems.org/gems/leonids). But it will be on beta until I can finish the doc of how you can install leonids with the rubygem version.
 
-This is a personal blog to record my thinking.
+### Update 05/06/2016
 
-I would try my best to keep both me and my blog progressing.
+Important! It's better to download the gzipped files instead of forking the repo. I would really appreciate if you could give me a star. 😁
 
-If you have some questions or suggestions, please feel free to contact me via email.
+This project is under MIT license, so feel free to make it your own.
 
-You can see this site [here](http://firiceguo.github.io).
+# Leonids Jekyll Themes
 
-Email address: firiceguo@gmail.com
+**[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.
 
+## What is Leonids?
 
-## Theme
-This blog was made on [GitHub Pages](https://pages.github.com/) using [Jekyll](http://jekyllrb.com/) with modified [jekyll clean theme](http://jekyllthemes.org/themes/jekyll-clean/) and Disqus as a comments system. 
+* Responsive templates. Looking good on mobile, tablet, and desktop.
+* Simple and clear permalink structure.
+* Support for Disqus Comments.
+* Support for multi-authors.
+* **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
 
-Thank [Jacob Tomlinson](https://twitter.com/_JacobTomlinson) for creating this amazing theme. You can get it [here](https://github.com/jacobtomlinson/carte-noire).
+See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
 
-## Tools and Libraries
-The following tools and libraries are used in this theme
+## Quick setup
 
-### JavaScript
- * [jQuery](http://jquery.com/)
- * [MMenu](http://mmenu.frebsite.nl/)
- * [HighlightJS](https://highlightjs.org/)
- * [Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+```
+git clone https://github.com/renyuanz/leonids
+cd leonids
+jekyll server
+```
 
-### CSS
- * [Bootstrap](http://getbootstrap.com/)
- * [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+Check out your awesome blog at `http://localhost:4000` and Cheers!
 
-### Social
- * [AddThis](http://www.addthis.com/)
- * [Disqus](https://disqus.com/)
+## Running with Docker
 
-### Other
- * [Real Favicon Generator](http://realfavicongenerator.net/)
- * [Google Analytics](http://www.google.com/analytics/)
+```
+docker run --rm -it --volume=$PWD:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch --force_polling
+```
 
-## License
-The jekyll theme, HTML, CSS and JavaScript is licensed under GPLv3 (unless stated otherwise in the file).
+## TODO
+
+- [ ] Build a timeline page.
+- [ ] Build a portfolio page.
+- [ ] Redesign categories page. Ref: [dribbble: blog category section By Ilja Miskov](https://dribbble.com/shots/2274792-Blog-Category-Selection)
+- [ ] Multi languages support.
