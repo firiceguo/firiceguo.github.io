@@ -24,6 +24,7 @@ layout: default
       {% if post.link %}
       <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-external-link"></i></a>
       {% endif %}
+      <li>{{ post.description }}</li>
     </h2>
 
     {% if post.author %}
