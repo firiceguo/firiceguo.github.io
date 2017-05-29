@@ -51,7 +51,7 @@ section.post {
 
 .post-title-link {
 	color: $primary;
-	font-size: 14px;
+	font-size: 16px;
 	margin-left: 10px;
 	&:hover,
 	&:focus {
@@ -61,7 +61,7 @@ section.post {
 
 // Post meta
 .post-meta {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
 	.post-date {
 		color: $secondary;
