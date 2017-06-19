@@ -41,11 +41,11 @@ description: Cluster Analysis - Basic Concepts and Methods
 
 - Jaccard 系数：$$JC = \frac a {a+b+c}$$
 
-- FM 指数：$$FMI = \sqrt{{\frac a {a+b}}*{\frac a {a+c}}}$$
+- FM 指数：$$FMI = \sqrt{\{{\frac a {a+b}}*{\frac a {a+c}}\}}$$
 
 - Rand 指数：$$RI = \frac {2(a+d)}{m(m-1)}$$
 
-对数据集$$D={x_1, x_2, ... , x_m}$$，假定通过聚类给出的簇划分为$$C = {C_1, C_2, ..., C_k}$$，参考模型给出的簇划分为$$C^* = {C^*_1, C^*_2, ..., C^*_s}$$。相应地，令$$\lambda$$与$$\lambda^*$$分别表示与$$C$$和$$C^*$$对应的簇标记向量。将样本两两配对考虑，定义：
+对数据集$$D=\{x_1, x_2, ... , x_m\}$$，假定通过聚类给出的簇划分为$$C = \{C_1, C_2, ..., C_k\}$$，参考模型给出的簇划分为$$C^* = {C^*_1, C^*_2, ..., C^*_s}$$。相应地，令$$\lambda$$与$$\lambda^*$$分别表示与$$C$$和$$C^*$$对应的簇标记向量。将样本两两配对考虑，定义：
 
 $$a = |SS|, SS = {(x_i, x_j)|\lambda_i=\lambda_j, \lambda^*_i=\lambda^*_j, i<j}$$
 
@@ -57,7 +57,7 @@ $$d = |DD|, SS = {(x_i, x_j)|\lambda_i \neq \lambda_j, \lambda^*_i \neq \lambda^
 
 ### 内部指标（直接考察聚类结果，不利用参考模型）
 
-考虑聚类结果的簇划分：$$C = {C_1, C_2, ..., C_k}$$，定义：
+考虑聚类结果的簇划分：$$C = \{C_1, C_2, ..., C_k\}$$，定义：
 
 簇$$C$$内样本间的平均距离：$$avg(C) = \frac 2 {|C|(|C|-1)} \sum_{1 \leq i < j \leq |C|}dist(x_i, x_j)$$
 
@@ -69,7 +69,7 @@ $$d = |DD|, SS = {(x_i, x_j)|\lambda_i \neq \lambda_j, \lambda^*_i \neq \lambda^
 
 基于上面四个式子导出下面常用的内部指标：
 
-- DB指数(越小越好)：$$DBI = \frac 1 k \sum_{i=1}^k max_{j \neq i}(\frac {avg(C_i) + avg(C_j)}{d_{cen}(\mu_i, \mu_j)})$$
+- DB指数(越小越好)：$$DBI = \frac 1 k \sum_{i=1}^k max_{j \neq i}\{\frac {avg(C_i) + avg(C_j)}{d_{cen}(\mu_i, \mu_j)}\}$$
 
 - Dunn指数(越大越好)：$$DI = min_{1 \leq i \leq k} \left\{ min_{j\neq i}(\frac {d_{min}(C_i, C_j)}{max_{1\leq l\leq k}diam(C_l)})\right\}$$
 
