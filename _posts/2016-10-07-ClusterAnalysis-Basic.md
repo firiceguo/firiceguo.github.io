@@ -41,11 +41,11 @@ description: Cluster Analysis - Basic Concepts and Methods
 
 - Jaccard 系数：$$JC = \frac a {a+b+c}$$
 
-- FM 指数：$$FMI = \sqrt{\{{\frac a {a+b}}*{\frac a {a+c}}\}}$$
+- FM 指数：$$FMI = \sqrt{({\frac a {a+b}}*{\frac a {a+c}})}$$
 
 - Rand 指数：$$RI = \frac {2(a+d)}{m(m-1)}$$
 
-对数据集$$D=\{x_1, x_2, ... , x_m\}$$，假定通过聚类给出的簇划分为$$C = \{C_1, C_2, ..., C_k\}$$，参考模型给出的簇划分为$$C^* = {C^*_1, C^*_2, ..., C^*_s}$$。相应地，令$$\lambda$$与$$\lambda^*$$分别表示与$$C$$和$$C^*$$对应的簇标记向量。将样本两两配对考虑，定义：
+对数据集$$D=\{x_1, x_2, ... , x_m\}$$，假定通过聚类给出的簇划分为$$C = \{C_1, C_2, ..., C_k\}$$，参考模型给出的簇划分为$$C^* = \{C^*_1, C^*_2, ..., C^*_s\}$$。相应地，令$$\lambda$$与$$\lambda^*$$分别表示与$$C$$和$$C^*$$对应的簇标记向量。将样本两两配对考虑，定义：
 
 $$a = |SS|, SS = {(x_i, x_j)|\lambda_i=\lambda_j, \lambda^*_i=\lambda^*_j, i<j}$$
 
@@ -57,15 +57,25 @@ $$d = |DD|, SS = {(x_i, x_j)|\lambda_i \neq \lambda_j, \lambda^*_i \neq \lambda^
 
 ### 内部指标（直接考察聚类结果，不利用参考模型）
 
-考虑聚类结果的簇划分：$$C = \{C_1, C_2, ..., C_k\}$$，定义：
+考虑聚类结果的簇划分：$$C = \{C_1, C_2, ..., C_k\}$$
 
-簇$$C$$内样本间的平均距离：$$avg(C) = \frac 2 {|C|(|C|-1)} \sum_{1 \leq i < j \leq |C|}dist(x_i, x_j)$$
+定义：
 
-簇$$C$$内样本间的最远距离：$$diam(C) = max_{1 \leq i < j \leq |C|}dist(x_i, x_j)$$
+- 簇$$C$$内样本间的平均距离：
 
-簇$$C_i$$与簇$$C_j$$最近样本的距离：$$d_{min}(C_i, C_j) = min_{x_i \in C_i, x_j \in C_j}dist(x_i, x_j)$$
+    $$avg(C) = \frac 2 {|C|(|C|-1)} \sum_{1 \leq i < j \leq |C|}dist(x_i, x_j)$$
 
-簇$$C_i$$与簇$$C_j$$中心点的距离：$$d_{cen}(C_i, C_j) = dist(\mu_i, \mu_j)$$
+- 簇$$C$$内样本间的最远距离：
+
+    $$diam(C) = max_{1 \leq i < j \leq |C|}dist(x_i, x_j)$$
+
+- 簇$$C_i$$与簇$$C_j$$最近样本的距离：
+
+    $$d_{min}(C_i, C_j) = min_{x_i \in C_i, x_j \in C_j}dist(x_i, x_j)$$
+
+- 簇$$C_i$$与簇$$C_j$$中心点的距离：
+
+    $$d_{cen}(C_i, C_j) = dist(\mu_i, \mu_j)$$
 
 基于上面四个式子导出下面常用的内部指标：
 
