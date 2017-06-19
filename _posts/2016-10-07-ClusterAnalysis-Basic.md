@@ -33,6 +33,46 @@ description: Cluster Analysis - Basic Concepts and Methods
 
 8. 基于连接（Link-based clustering）：常用方法：SimRank, LinkClus
 
+## 聚类的度量指标
+
+### 外部指标（与某个“参考模型”进行比较）
+
+结果均在`[0, 1]`之间，值越大越好。
+
+- Jaccard 系数：$$JC = \frac a {a+b+c}$$
+
+- FM 指数：$$FMI = \sqrt{{\frac a {a+b}}*{\frac a {a+c}}}$$
+
+- Rand 指数：$$RI = \frac {2(a+d)}{m(m-1)}$$
+
+对数据集$$D={x_1, x_2, ... , x_m}$$，假定通过聚类给出的簇划分为$$C = {C_1, C_2, ..., C_k}$$，参考模型给出的簇划分为$$C^* = {C^*_1, C^*_2, ..., C^*_s}$$。相应地，令$$\lambda$$与$$\lambda^*$$分别表示与$$C$$和$$C^*$$对应的簇标记向量。将样本两两配对考虑，定义：
+
+$$a = |SS|, SS = {(x_i, x_j)|\lambda_i=\lambda_j, \lambda^*_i=\lambda^*_j, i<j}$$
+
+$$b = |SD|, SD = {(x_i, x_j)|\lambda_i=\lambda_j, \lambda^*_i \neq \lambda^*_j, i<j}$$
+
+$$c = |DS|, DS = {(x_i, x_j)|\lambda_i \neq \lambda_j, \lambda^*_i=\lambda^*_j, i<j}$$
+
+$$d = |DD|, SS = {(x_i, x_j)|\lambda_i \neq \lambda_j, \lambda^*_i \neq \lambda^*_j, i<j}$$
+
+### 内部指标（直接考察聚类结果，不利用参考模型）
+
+考虑聚类结果的簇划分：$$C = {C_1, C_2, ..., C_k}$$，定义：
+
+簇$$C$$内样本间的平均距离：$$avg(C) = \frac 2 {|C|(|C|-1)} \sum_{1 \leq i < j \leq |C|}dist(x_i, x_j)$$
+
+簇$$C$$内样本间的最远距离：$$diam(C) = max_{1 \leq i < j \leq |C|}dist(x_i, x_j)$$
+
+簇$$C_i$$与簇$$C_j$$最近样本的距离：$$d_{min}(C_i, C_j) = min_{x_i \in C_i, x_j \in C_j}dist(x_i, x_j)$$
+
+簇$$C_i$$与簇$$C_j$$中心点的距离：$$d_{cen}(C_i, C_j) = dist(\mu_i, \mu_j)$$
+
+基于上面四个式子导出下面常用的内部指标：
+
+- DB指数(越小越好)：$$DBI = \frac 1 k \sum_{i=1}^k max_{j \neq i}(\frac {avg(C_i) + avg(C_j)}{d_{cen}(\mu_i, \mu_j)})$$
+
+- Dunn指数(越大越好)：$$DI = min_{1 \leq i \leq k} \left\{ min_{j\neq i}(\frac {d_{min}(C_i, C_j)}{max_{1\leq l\leq k}diam(C_l)})\right\}$$
+
 ## Partitioning method
 
 把拥有`n`个对象的数据集`D`分成`k`类，目的是最小化平方距离和`E`：
@@ -95,7 +135,7 @@ $$ E = \sum^k_{i=1} \sum_{p \in C_i} (d(p,c_i)^2) $$
 
 - Radius：$$ R_m=\sqrt{\frac{\sum^N_{i=1}(t_{ip}-c_m)^2}{N}} $$
 
-## Density-Based Methods
+## Density-Based Methods (DBSCAN)
 
 基于密度的方法可以对任意形状起作用，对隔离噪声的能力强，只需要扫描一遍，但是需要密度参数作为终止条件。
 
